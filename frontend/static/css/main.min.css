@@ -1,0 +1,29 @@
+html, body {
+	margin: 0;
+	padding: 0;
+
+	overflow: auto;
+}
+
+.app-wrap {
+	padding: 0 30vh;
+}
+
+.output-box {
+	display: block;
+	margin: 30px auto;
+	padding: 10px 5px;
+	border-radius : 5px;
+
+	/*width: 500px;*/
+	height: 70vh;
+	background-color: rgba(0, 0, 0, 0.125);
+}
+
+.input-box {
+	display: block;
+	height: 15vh;
+	background-color: rgba(0, 0, 0, 0.125);
+
+
+}

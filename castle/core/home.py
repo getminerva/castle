@@ -9,11 +9,6 @@
 [!] Need to convert home-device-storing to sets
 """
 
-import constants as CONST
-BLTH = CONST.BLTH
-TIME = CONST.TIME
-RQST = CONST.RQST
-
 class House(object):
 
     def __init__(self):
