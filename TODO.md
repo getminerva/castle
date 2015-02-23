@@ -1,5 +1,8 @@
 #TODO
 
+FRONTEND
+[+] Add timestamp and heading
+
 [+] Three separate sever instances working on three threads (or processes?)
     One would be for updates over BT, one Wifi, and the other for vocal..or nah
 [+] Resolve dependencies and and reorganize/figure out importing for core and other nodes
