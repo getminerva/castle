@@ -5,16 +5,12 @@ html, body {
 }
 
 .app-wrap {
-	padding: 0 20vw;
+	padding: 15px 20vw;
 }
 
 .response-container {
 	display: block;
-	border-radius: 5px;
-	margin: 15px auto;
 	padding: 10px 10px;
-
-	height: 570px;
 	overflow-y: auto;
 
 	background-color: rgba(0, 128, 0, 0.125);
@@ -73,7 +69,9 @@ html, body {
 
 .responder {
 	/*display: inline-block;*/
-	font-size:
+	margin-top: 0;
+	font-size: 1em;
+	color: gray;
 }
 
 .response-output-text {
@@ -85,21 +83,28 @@ html, body {
 
 }
 
+/*INPUT BOX*/
+
 .input-container {
 	display: block;
-	border-radius: 5px;
 	padding: 10px 10px;
 	height: 64px;
 	background-color: rgba(128, 0, 0, 0.125);
+
+	font-family: Helvetica, sans-serif;
 }
 
 .speech-button {
 	display: block;
 	float: left;
 	border-radius: 4px;
-	margin-right: 15px;
+	margin-right: 10px;
 	width: 64px;
 	height: 64px;
+
+	background: url('../img/mic.png');
+	background-size: 75% 75%;
+	background-repeat: no-repeat;
 
 	background-color: rgba(0, 128, 128, 0.125);
 }
@@ -108,15 +113,65 @@ html, body {
 	background-color: rgba(0, 128, 128, 0.0625);
 }
 
+.input-form {
+	display:block;
+	float:left;
+	background-color: white;
+}
+
+.input-field:before {
+	display: block;
+	content: '';
+	border-right: solid 3px rgba(0, 0, 0, 0.125);
+	width: 3px;
+	height: 6px;
+}
+
 .input-field {
 	display: block;
+	border: 0;
 	float: left;
-	padding: 5px 10px;
-	width: 85%;
+	padding: 0px 10px;
+	height: 64px;
 
-	background-color: white;
+	background-color: transparent;
 	font-size: 2em;
 }
+
+.input-field:active {
+	outline: 0;
+	text-shadow: none;
+	box-shadow: none;
+}
+
+.clear-button {
+	display: block;
+	position: relative;
+	float: left;
+	top: 2px;
+	/*left: -40px;*/
+	align: center;
+	padding: 0 10px;
+	height: 60px;
+	width: 300px;
+
+	background-image: url('../img/cross.png') no-repeat;
+	background-color: transparent;
+	color: gray;
+	font-size: 2em;
+}
+
+.clear-button:hover {
+	color: lightgray;
+}
+
+.clear-button:active {
+	color: black;
+}
+
+
+/*RESPONSIVE*/
+
 
 @media all and (max-width: 1000px ) {
 
@@ -128,7 +183,6 @@ html, body {
 
 /*SCROLLBAR BEGIN*/
 ::-webkit-scrollbar {
-	margin: 0 0 0 5px;
     width: 7px;
 }
 
