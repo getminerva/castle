@@ -1,7 +1,8 @@
 #TODO
 
 FRONTEND
-[+] Add timestamp and heading
+[+] Add timestamp and heading [Done]
+[+] Figure out why children divs that I've forced to float left make the parent div have a height of 0.
 
 [+] Three separate sever instances working on three threads (or processes?)
     One would be for updates over BT, one Wifi, and the other for vocal..or nah
