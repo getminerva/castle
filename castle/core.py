@@ -1,17 +1,8 @@
 #!/usr/bin/python
 """
-CHOPPING BLOCK AND OVERHAUL. starting 1/28/2015
+CASTLE Core
 
-
-Sweeeet it works. 6/5/2014.
-
-Just have to make it faster now, formalize the User, Device, System and House classes
-and make it easier to programaticallly add a link.
-And I want to add IFTTT integration.
-
-[T]7/29/14
-[!] Use Task class from task, it's a bit stronger and based of partial() from functools
-[+] Moved User and a few classes to home, fixed/ centralized (mostly) create_dev and add_dev functions
+Joshua Chan
 """
 
 import constants as CONST
