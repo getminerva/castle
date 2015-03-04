@@ -1,5 +1,5 @@
 # Virtualenv
 .Python
-bin
-lib
-include
+Scripts
+Lib
+Include
