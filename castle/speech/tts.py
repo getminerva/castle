@@ -21,7 +21,14 @@ I said, "How was your day?"
 """
 
 # import some audio module or cmd thing
-# Use some TTS service (or roll my own)
+import subprocess # to open ffmpeg from bin
+
+# Use some TTS service before I roll my own
+import requests # to make internet call
+
+import queue # to hold texts to say
+# Process
+# import numpy # to do necessary numerical computations
 
 class Speaker(object):
 	"""
@@ -29,11 +36,32 @@ class Speaker(object):
 	"""
 
 	def __init__(self):
-		self.q =
+		max_sents = 12
+		self.q = queue.Queue(max_sents) # Holds the text queue
 		pass
 
-	def speak(self, text):
+	def get_queue(self):
 		"""
-		Takes text and speaks it
+		Return an immutable view of the text queue.
 		"""
-		pass
+		raise NotImplementedError
+		return self
+
+	def say(self, text):
+		"""
+		Takes text and speaks it.
+
+		Puts it through a pre-processor and (temporarily) hits the TTS API with it.
+		"""
+		uri = "http://tts-api.com/tts.mp3"
+		query = "q=hello+world"
+
+		raise NotImplementedError
+		return self
+
+	def _say(self, audio_data):
+		# Spawn subprocess of fmmpeg
+		# Pop speech from Q, blocks
+		# Pipes text to ffmpeg
+		# When ffmpeg finishes, unblock Q
+		return self
