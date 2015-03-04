@@ -1,5 +1,9 @@
 # Virtualenv
 .Python
+venv
 Scripts
 Lib
 Include
+
+# Binaries/Executables
+bin

@@ -2,10 +2,11 @@
 
 SPEECH
 
+
 DEVICE
 
 /castle/device/device.py
-[+] Rewrite Device classes to spearate comm. tunnels and devices themselves.
+[+] Rewrite Device classes to separate comm. tunnels and devices themselves.
 
 /fridge.py
 [+] Move to ./castle?
@@ -24,7 +25,6 @@ CORE
 [+] Template system for voice responses...? That would make it sorta flexible.
 [+] Look into using decorators for storing tasks (and taskmaster) vs functools
 [+] Clean up word-sorter
-
 
 
 #WORKLOG
