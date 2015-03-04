@@ -1,5 +1,10 @@
 #TODO
 
+SPEECH
+/castle/speech/tts.py
+[+] Wrote user spec/light doc-test for module in comment
+[+] Look into text-preprocessing for speech? With accents and emphasis and what not
+
 DEVICE
 /castle/device/device.py
 [+] Rewrite Device classes to spearate comm. tunnels and devices themselves.
