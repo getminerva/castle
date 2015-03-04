@@ -4,6 +4,8 @@ SPEECH
 /castle/speech/tts.py
 [+] Wrote user spec/light doc-test for module in comment
 [+] Look into text-preprocessing for speech? With accents and emphasis and what not
+[+] Install ffmpeg, place into bin...?
+[+] Install venv to freeze things
 
 DEVICE
 /castle/device/device.py
