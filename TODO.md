@@ -4,7 +4,8 @@ SPEECH
 /castle/speech/tts.py
 [+] Wrote user spec/light doc-test for module in comment
 [+] Look into text-preprocessing for speech? With accents and emphasis and what not
-[+] Install ffmpeg, place into bin...?
+    [+] Looked into, is already part of the algorithms. Use TTS API in the short-run.
+[+] Install ffmpeg (or some lightweight media player), place into bin...?
 [+] Install venv to freeze things
 
 DEVICE
