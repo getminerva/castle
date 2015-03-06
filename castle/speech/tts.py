@@ -31,16 +31,30 @@ import thread # to make things happen at the same time
 
 # Process
 # import numpy # to do necessary numerical computations
-class Player(object):
 
-	raise NotImplementedError
+class TextProcessor(object):
+	"""
+	Takes given text and returns audio data.
+	"""
+
+	def __init__(self):
+		raise NotImplementedError
+
+
+class SpeechPlayer(object):
+	"""
+	Outputs audio data.
+	"""
+
+	def __init__(self):
+		raise NotImplementedError
 
 class Speaker(object):
 	"""
 	Speaker object.
 	"""
 
-	def __init__(self):
+	def __init__(self, ):
 		max_sents = 12
 
 		# Queue to represent what texts have not been said, what texts have been said, and what texts are being said.
