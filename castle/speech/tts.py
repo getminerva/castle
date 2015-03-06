@@ -41,6 +41,12 @@ class TextProcessor(object):
 		raise NotImplementedError
 
 
+	def process(self, text):
+		raise NotImplementedError
+
+	def _format(self, text):
+		raise NotImplementedError
+
 class SpeechPlayer(object):
 	"""
 	Outputs audio data.
@@ -49,12 +55,18 @@ class SpeechPlayer(object):
 	def __init__(self):
 		raise NotImplementedError
 
+	def play(self, audio_data):
+		raise NotImplementedError
+
+	def pause(self):
+		raise NotImplementedError
+
 class Speaker(object):
 	"""
 	Speaker object.
 	"""
 
-	def __init__(self, ):
+	def __init__(self, engine, player):
 		max_sents = 12
 
 		# Queue to represent what texts have not been said, what texts have been said, and what texts are being said.
@@ -122,9 +134,16 @@ def test_interject(speaker):
 	# Should execute and pause any current output, executing immediately.
 	speaker.interject("WATCH OUT!")
 
+def test_long_say(speaker):
+	text = "To be or not to be, that is the question. Whether 'tis nobler in the mind to suffer the slings and arrows of outrageous fortune, or to take arms agagainst a sea of troubles, and by opposing, end them. To die, to sleep, no more. And by a sleep tosay we end the heartbreak and thousand natural shocks that flesh is heir to. 'Tis a consummation devoutly to be wished. To die, to sleep. To sleep perchance to dream. Aye, there's the rub; for in that sleep of death what dreams may come must give men pause. For who would bear the whips and scorns of time, the proud man's contumely, the lover's spurn, when he might himself quietus make with a bare bodkin?"
+	speaker.say(text)
+
 def main():
 	# Initialize speaker
-	baymax = Speaker()
+	brain = TextProcessor()
+	vocal_chords = SpeechPlayer()
+
+	baymax = Speaker(brain, vocal_chords)
 
 	# Activate output mode - prime it to receive input and produce output
 	baymax.activate()

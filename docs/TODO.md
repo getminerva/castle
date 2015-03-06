@@ -1,6 +1,10 @@
 #TODO
 
 SPEECH
+/castle/speech/tts.py
+
+	[+]	Look into using pyttsx. If not, maybe write own package to access drivers? Easier than completely rolling my own.
+		- Gotta test results using pyttsx. Hopefully it's py3.x compatible.
 
 
 DEVICE
